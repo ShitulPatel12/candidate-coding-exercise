@@ -1,0 +1,17 @@
+group 'com.riverisland'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.11.0'
+    testCompile group: 'org.seleniumhq.selenium', name: 'selenium-support', version: '3.11.0'
+    testCompile 'io.github.prashant-ramcharan:webdriver-binary-downloader:1.2.2'
+}
